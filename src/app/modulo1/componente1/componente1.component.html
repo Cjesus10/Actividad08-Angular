@@ -1,0 +1,42 @@
+<body class="p-4">
+    <h2>Actividad Asincrónica 08</h2>
+<form action="">
+    <p>
+        <label for="">Nombre:</label>
+        <input type="text" name = "nom" [(ngModel)]="nombre">
+    </p>
+    <p>
+        <label for="">Apellidos:</label>
+        <input type="text" name="ape" [(ngModel)]="apellidos">
+    </p>
+    <p>
+        <label for="">Edad:</label>
+        <input type="number" name="edad" [(ngModel)]="edad" (input)="Situacion()">
+    </p>
+</form>
+<button class="btn btn-primary" (click)= "Agregar()" >Agregar</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+            <th>Situación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let x of datos">
+            <td>{{x.Nombre}}</td>
+            <td>{{x.Apellido}}</td>
+            <td>{{x.Edad}}</td>
+            <td>{{x.Mensaje}}</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+
+
+
+
+
