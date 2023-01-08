@@ -2,4 +2,4 @@
 # Alumno:
 - Cristian Joel Jesus Aire
 
-![Página principal](.src/assets/Captura.PNG)
+![Página principal](src/assets/Captura.PNG)
